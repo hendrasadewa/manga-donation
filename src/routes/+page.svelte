@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Seo from '$lib/components/SEO.svelte';
 	import type { BooksResponse } from '$lib/types';
 	import List from './List.svelte';
 
@@ -6,6 +7,8 @@
 
 	let books = data.data || [];
 </script>
+
+<Seo />
 
 <main class="max-w-96 m-auto">
 	<header>
